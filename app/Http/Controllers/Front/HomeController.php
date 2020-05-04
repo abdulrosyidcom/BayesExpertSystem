@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Post;
 use Illuminate\Http\Request;
 
+// Bismillahirrahmanirrahimmm
+
 class HomeController extends Controller
 {
     public function index()
