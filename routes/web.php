@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,13 +27,14 @@ Route::group(
         Route::get('dashboard', 'DashboardController@index')->name('dashboard');
         Route::resource('symptoms', 'SymptomsController');
         Route::resource('diseases', 'DiseasesController');
-        Route::resource('datasets', 'DatasetsController');
         Route::resource('posts', 'PostsController');
         Route::resource('categories', 'CategoriesController');
         Route::resource('tags', 'TagsController');
 
         Route::get('/profile', 'SettingsController@profile');
         Route::patch('/profile/update', 'SettingsController@profileUpdate');
+        Route::get('/password', 'SettingsController@password')->name('backend.password');
+        Route::patch('/updatePassword', 'SettingsController@updatePassword')->name('backend.updatePassword');
     }
 );
 
@@ -46,6 +48,11 @@ Route::group(
     ],
     function () {
         Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
+        Route::get('/profile', 'SettingsController@profile');
+        Route::patch('/profile/update', 'SettingsController@profileUpdate');
+        Route::get('/password', 'SettingsController@password')->name('backend.password');
+        Route::patch('/updatePassword', 'SettingsController@updatePassword')->name('backend.updatePassword');
     }
 );
 

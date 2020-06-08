@@ -138,7 +138,9 @@
                                         <ul class="navigation clearfix">
                                             <li><a href="{{ url('/') }}">Home</a></li>
                                             <li><a href="{{ url('/blog') }}">Blog</a></li>
+                                            @guest
                                             <li><a href="{{ url('/login') }}">Login</a></li>
+                                            @endguest
                                         </ul>
                                     </div>
                                 </nav>

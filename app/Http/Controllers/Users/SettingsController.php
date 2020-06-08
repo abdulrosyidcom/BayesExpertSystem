@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
+use App\Rules\MatchOldPassword;
 use App\User;
 use Illuminate\Http\Request;
-use App\Rules\MatchOldPassword;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class SettingsController extends Controller
 {
     public function profile()
     {
-        return view('admin.settings.profile');
+        return view('users.settings.profile');
     }
 
     public function profileUpdate(Request $request, User $user)
@@ -45,12 +45,12 @@ class SettingsController extends Controller
             'image' => $filename
         ]);
 
-        return redirect('admin/profile')->with('toast_success', 'Profile Berhasil Diubah');
+        return redirect('users/profile')->with('toast_success', 'Profile Berhasil Diubah');
     }
 
     public function password()
     {
-        return view('admin.settings.password');
+        return view('users.settings.password');
     }
 
     public function updatePassword(Request $request)
@@ -65,6 +65,6 @@ class SettingsController extends Controller
             'password' => Hash::make($request->new_password)
         ]);
 
-        return redirect('/admin/password')->with('toast_success', 'Password Berhasil Diubah');
+        return redirect('/users/password')->with('toast_success', 'Password Berhasil Diubah');
     }
 }

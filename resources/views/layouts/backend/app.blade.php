@@ -27,50 +27,6 @@
                 <div></div>
             </div>
             <div class="d-flex align-items-center">
-                <!-- Mega menu -->
-                <div class="dropdown mega-menu d-none d-md-block">
-                    <a href="blank.html#" class="btn text-muted dropdown-toggle mr-3" id="dropdownMegaMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu</a>
-                    <div class="dropdown-menu text-left" aria-labelledby="dropdownMenuButton">
-                        <div class="row m-0">
-                            <div class="col-md-4 p-4 bg-img">
-                                <h2 class="title">Expert System <br> Ginjal</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores natus laboriosam fugit, consequatur.
-                                </p>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem odio amet eos dolore suscipit placeat.</p>
-                                <a href="" class="btn btn-lg btn-rounded btn-outline-warning">Learn More</a>
-                            </div>
-                            <div class="col-md-4 p-4">
-                                <p class="text-primary text--cap border-bottom-primary d-inline-block">Features</p>
-                                <div class="menu-icon-grid w-auto p-0">
-                                    <a href="{{ url('/admin/dashboard') }}"><i class="i-Shop-4"></i> Home</a>
-                                    <a href="blank.html#"><i class="i-Library"></i> UI Kits</a>
-                                    <a href="blank.html#"><i class="i-Drop"></i> Apps</a>
-                                    <a href="blank.html#"><i class="i-File-Clipboard-File--Text"></i> Forms</a>
-                                    <a href="blank.html#"><i class="i-Checked-User"></i> Sessions</a>
-                                    <a href="blank.html#"><i class="i-Ambulance"></i> Support</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 p-4">
-                                <p class="text-primary text--cap border-bottom-primary d-inline-block">Components</p>
-                                <ul class="links">
-                                    <li><a href="accordion.html">Accordion</a></li>
-                                    <li><a href="alerts.html">Alerts</a></li>
-                                    <li><a href="buttons.html">Buttons</a></li>
-                                    <li><a href="badges.html">Badges</a></li>
-                                    <li><a href="carousel.html">Carousels</a></li>
-                                    <li><a href="lists.html">Lists</a></li>
-                                    <li><a href="popover.html">Popover</a></li>
-                                    <li><a href="tables.html">Tables</a></li>
-                                    <li><a href="datatables.html">Datatables</a></li>
-                                    <li><a href="modals.html">Modals</a></li>
-                                    <li><a href="nouislider.html">Sliders</a></li>
-                                    <li><a href="tabs.html">Tabs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- / Mega menu -->
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
                     <i class="search-icon text-muted i-Magnifi-Glass1"></i>
@@ -94,83 +50,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- Notificaiton -->
-                <div class="dropdown">
-                    <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="badge badge-primary">3</span>
-                        <i class="i-Bell text-muted header-icon"></i>
-                    </div>
-                    <!-- Notification dropdown -->
-                    <div class="dropdown-menu dropdown-menu-right notification-dropdown rtl-ps-none" aria-labelledby="dropdownNotification" data-perfect-scrollbar data-suppress-scroll-x="true">
-                        <div class="dropdown-item d-flex">
-                            <div class="notification-icon">
-                                <i class="i-Speach-Bubble-6 text-primary mr-1"></i>
-                            </div>
-                            <div class="notification-details flex-grow-1">
-                                <p class="m-0 d-flex align-items-center">
-                                    <span>New message</span>
-                                    <span class="badge badge-pill badge-primary ml-1 mr-1">new</span>
-                                    <span class="flex-grow-1"></span>
-                                    <span class="text-small text-muted ml-auto">10 sec ago</span>
-                                </p>
-                                <p class="text-small text-muted m-0">James: Hey! are you busy?</p>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex">
-                            <div class="notification-icon">
-                                <i class="i-Receipt-3 text-success mr-1"></i>
-                            </div>
-                            <div class="notification-details flex-grow-1">
-                                <p class="m-0 d-flex align-items-center">
-                                    <span>New order received</span>
-                                    <span class="badge badge-pill badge-success ml-1 mr-1">new</span>
-                                    <span class="flex-grow-1"></span>
-                                    <span class="text-small text-muted ml-auto">2 hours ago</span>
-                                </p>
-                                <p class="text-small text-muted m-0">1 Headphone, 3 iPhone x</p>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex">
-                            <div class="notification-icon">
-                                <i class="i-Empty-Box text-danger mr-1"></i>
-                            </div>
-                            <div class="notification-details flex-grow-1">
-                                <p class="m-0 d-flex align-items-center">
-                                    <span>Product out of stock</span>
-                                    <span class="badge badge-pill badge-danger ml-1 mr-1">3</span>
-                                    <span class="flex-grow-1"></span>
-                                    <span class="text-small text-muted ml-auto">10 hours ago</span>
-                                </p>
-                                <p class="text-small text-muted m-0">Headphone E67, R98, XL90, Q77</p>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex">
-                            <div class="notification-icon">
-                                <i class="i-Data-Power text-success mr-1"></i>
-                            </div>
-                            <div class="notification-details flex-grow-1">
-                                <p class="m-0 d-flex align-items-center">
-                                    <span>Server Up!</span>
-                                    <span class="badge badge-pill badge-success ml-1 mr-1">3</span>
-                                    <span class="flex-grow-1"></span>
-                                    <span class="text-small text-muted ml-auto">14 hours ago</span>
-                                </p>
-                                <p class="text-small text-muted m-0">Server rebooted successfully</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Notificaiton End -->
+               
                 <!-- User avatar dropdown -->
                 <div class="dropdown">
                     <div class="user col align-self-end">
-                        <img src="{{ asset('assets/backend') }}/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="{{ asset('storage/users/' . Auth::user()->image) }}" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                             <div class="dropdown-header">
                                 <i class="i-Lock-User mr-1"></i> {{ Auth::user()->name }}
                             </div>
-                            <a class="dropdown-item">Account settings</a>
-                            <a class="dropdown-item">Billing history</a>
+                            @if (Request::is('admin*'))
+                            <a href="{{ url('admin/profile') }}" class="dropdown-item">Account settings</a>
+                            @else
+                            <a href="{{ url('users/profile') }}" class="dropdown-item">Account settings</a>
+                            @endif
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Sign out</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -185,53 +78,42 @@
         <div class="side-content-wrap">
             <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
                 <ul class="navigation-left">
-                    <li class="nav-item {{ Request::is('admin/dashboard') ? 'active' : '' }}">
-                        <a class="nav-item-hold active" href="/users/dashboard">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <span class="nav-text">Dashboard</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
 
-                    <li class="nav-item {{ Request::is('admin/symptoms') ? 'active' : '' }}">
-                        <a class="nav-item-hold" href="/admin/symptoms">
-                            <i class="fas fa-stethoscope"></i>
-                            <span class="nav-text">Gejala</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
+                    @if (Request::is('admin*'))
+                        
+                        <li class="nav-item {{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                            <a class="nav-item-hold active" href="/admin/dashboard"><i class="fas fa-tachometer-alt"></i><span class="nav-text">Dashboard</span></a>
+                            <div class="triangle"></div>
+                        </li>
+                        <li class="nav-item {{ Request::is('admin/symptoms') ? 'active' : '' }}">
+                            <a class="nav-item-hold" href="/admin/symptoms"><i class="fas fa-stethoscope"></i><span class="nav-text">Gejala</span></a>
+                            <div class="triangle"></div>
+                        </li>
+                        <li class="nav-item {{ Request::is('admin/diseases') ? 'active' : '' }}">
+                            <a class="nav-item-hold" href="/admin/diseases"><i class="fas fa-disease"></i><span class="nav-text">Penyakit</span></a>
+                            <div class="triangle"></div>
+                        </li>
+                        <li class="nav-item {{ Request::is('admin/posts') ? 'active' : '' }}" data-item="posts">
+                            <a class="nav-item-hold" href="/admin/posts"><i class="fas fa-align-justify"></i><span class="nav-text">Posts</span></a>
+                            <div class="triangle"></div>
+                        </li>
+                        <li class="nav-item {{ Request::is('admin/settings') ? 'active' : '' }}" data-item="settings">
+                            <a class="nav-item-hold" href="/admin/posts"><i class="fas fa-users-cog"></i><span class="nav-text">Settings</span></a>
+                            <div class="triangle"></div>
+                        </li>
 
-                    <li class="nav-item {{ Request::is('admin/diseases') ? 'active' : '' }}">
-                        <a class="nav-item-hold" href="/admin/diseases">
-                            <i class="fas fa-disease"></i>
-                            <span class="nav-text">Penyakit</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-
-                    <li class="nav-item {{ Request::is('admin/datasets') ? 'active' : '' }}">
-                        <a class="nav-item-hold" href="/admin/datasets">
-                            <i class="fas fa-database"></i>
-                            <span class="nav-text">Dataset</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-
-                    <li class="nav-item {{ Request::is('admin/posts') ? 'active' : '' }}" data-item="posts">
-                        <a class="nav-item-hold" href="/admin/posts">
-                            <i class="fas fa-align-justify"></i>
-                            <span class="nav-text">Posts</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-
-                    <li class="nav-item {{ Request::is('admin/settings') ? 'active' : '' }}" data-item="settings">
-                        <a class="nav-item-hold" href="/admin/posts">
-                            <i class="fas fa-users-cog"></i>
-                            <span class="nav-text">Settings</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
+                    @endif
+                    
+                    @if (Request::is('users*'))
+                        <li class="nav-item {{ Request::is('users/dashboard') ? 'active' : '' }}">
+                            <a class="nav-item-hold active" href="/users/dashboard"><i class="fas fa-tachometer-alt"></i><span class="nav-text">Dashboard</span></a>
+                            {{-- <div class="triangle"></div> --}}
+                        </li>
+                        <li class="nav-item {{ Request::is('users/settings') ? 'active' : '' }}" data-item="settingsUsers">
+                            <a class="nav-item-hold" href="/admin/posts"><i class="fas fa-users-cog"></i><span class="nav-text">Settings</span></a>
+                            <div class="triangle"></div>
+                        </li>
+                    @endif
 
                 </ul>
             </div>
@@ -247,6 +129,13 @@
 
                 <ul class="childNav" data-parent="settings">
                     <li class="nav-item"><a href="/admin/profile"><i class="nav-icon far fa-user"></i><span class="item-name">Profile</span></a></li>
+                    <li class="nav-item"><a href="/admin/password"><i class="nav-icon fas fa-key"></i><span class="item-name">Password</span></a></li>
+                </ul>
+
+                {{-- Submenu Users --}}
+                <ul class="childNav" data-parent="settingsUsers">
+                    <li class="nav-item"><a href="/users/profile"><i class="nav-icon far fa-user"></i><span class="item-name">Profile</span></a></li>
+                    <li class="nav-item"><a href="/users/password"><i class="nav-icon fas fa-key"></i><span class="item-name">Password</span></a></li>
                 </ul>
                 
             </div>
