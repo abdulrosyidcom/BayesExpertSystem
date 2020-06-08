@@ -123,12 +123,6 @@
                                     <li><a href="index.html"><i class="fab fa-skype"></i></a></li>
                                 </ul>
 
-                                <div class="search-box-outer">
-                                    <form action="index.html" method="post" class="search-btn">
-                                        <button type="button" class="search-toggler"><i class="flaticon-search"></i>Search</button>
-                                    </form>
-                                </div>
-
                             </div>
                         </div>
                         <div class="header-upper clearfix">
@@ -142,9 +136,9 @@
                                 <nav class="main-menu navbar-expand-md navbar-light">
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
-                                            <li class="current dropdown"><a href="{{ url('/') }}">Home</a></li>
-                                            <li class="current dropdown"><a href="{{ url('/blog') }}">Blog</a></li>
-                                            <li class="current dropdown"><a href="{{ url('/login') }}">Login</a></li>
+                                            <li><a href="{{ url('/') }}">Home</a></li>
+                                            <li><a href="{{ url('/blog') }}">Blog</a></li>
+                                            <li><a href="{{ url('/login') }}">Login</a></li>
                                         </ul>
                                     </div>
                                 </nav>

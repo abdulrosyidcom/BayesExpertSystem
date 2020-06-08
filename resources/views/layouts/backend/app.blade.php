@@ -181,6 +181,7 @@
                 </div>
             </div>
         </div>
+
         <div class="side-content-wrap">
             <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
                 <ul class="navigation-left">
@@ -234,50 +235,22 @@
 
                 </ul>
             </div>
+
             <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
-                <!-- Submenu Dashboards-->
+
                 <ul class="childNav" data-parent="posts">
-                    <li class="nav-item">
-                        <a href="/admin/posts">
-                            <i class="nav-icon far fa-clone"></i>
-                            <span class="item-name">Posts</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="/admin/posts/create">
-                            <i class="nav-icon far fa-edit"></i>
-                            <span class="item-name">Create Post</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="/admin/categories">
-                            <i class="nav-icon fas fa-align-justify"></i>
-                            <span class="item-name">Categories</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="/admin/tags">
-                            <i class="nav-icon fas fa-tags"></i>
-                            <span class="item-name">Tags</span>
-                        </a>
-                    </li>
+                    <li class="nav-item"><a href="/admin/posts"><i class="nav-icon far fa-clone"></i><span class="item-name">Posts</span></a></li>
+                    <li class="nav-item"><a href="/admin/posts/create"><i class="nav-icon far fa-edit"></i><span class="item-name">Create Post</span></a></li>
+                    <li class="nav-item"><a href="/admin/categories"><i class="nav-icon fas fa-align-justify"></i><span class="item-name">Categories</span></a></li>
+                    <li class="nav-item"><a href="/admin/tags"><i class="nav-icon fas fa-tags"></i><span class="item-name">Tags</span></a></li>
                 </ul>
+
+                <ul class="childNav" data-parent="settings">
+                    <li class="nav-item"><a href="/admin/profile"><i class="nav-icon far fa-user"></i><span class="item-name">Profile</span></a></li>
+                </ul>
+                
             </div>
 
-            <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
-                    <!-- Submenu Dashboards-->
-                    <ul class="childNav" data-parent="settings">
-                        <li class="nav-item">
-                            <a href="/admin/profile">
-                                <i class="nav-icon far fa-user"></i>
-                                <span class="item-name">Profile</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             <div class="sidebar-overlay"></div>
         </div>
         <!-- =============== Left side End ================-->

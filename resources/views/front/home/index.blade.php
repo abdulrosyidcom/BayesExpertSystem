@@ -20,11 +20,14 @@
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                         <div class="content-box">
-                            <h1>Turn data into insight with survey reports</h1>
-                            <p>Naxly bring the power of data science and artificial<br />intelligence to every business.</p>
+                            <h1>Sistem Pakar Penyakit Ginjal</h1>
+                            <p>Menggunakan Algoritma<br>Bayes</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn style-two">Learn More<span>+</span></a>
-                                <a href="index.html" class="theme-btn style-one">Get Started<span>+</span></a>
+                                @guest
+                                <a href="/login" class="theme-btn style-one">Login<span>+</span></a>
+                                @else
+                                <a href="" class="theme-btn style-one">Diagnosa<span>+</span></a>
+                                @endguest
                             </div>
                         </div>
                     </div>
@@ -37,11 +40,11 @@
                             <figure class="image image-5 float-bob-y"><img src="{{ asset('assets/frontend') }}/images/banner/banner-1-4.png" alt=""></figure>
                             <figure class="image image-6 float-bob-y"><img src="{{ asset('assets/frontend') }}/images/banner/banner-1-5.png" alt=""></figure>
                             <figure class="image image-7"><img src="{{ asset('assets/frontend') }}/images/banner/banner-1-6.png" alt=""></figure>
-                            <figure class="image image-8 wow bounceInDown" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-1.png" alt=""></figure>
+                            {{-- <figure class="image image-8 wow bounceInDown" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-1.png" alt=""></figure>
                             <figure class="image image-9 wow bounceInDown" data-wow-delay="200ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-2.png" alt=""></figure>
                             <figure class="image image-10 wow bounceInDown" data-wow-delay="400ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-3.png" alt=""></figure>
                             <figure class="image image-11 wow bounceInDown" data-wow-delay="600ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-4.png" alt=""></figure>
-                            <figure class="image image-12 wow bounceInDown" data-wow-delay="800ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-5.png" alt=""></figure>
+                            <figure class="image image-12 wow bounceInDown" data-wow-delay="800ms" data-wow-duration="1500ms"><img src="{{ asset('assets/frontend') }}/images/icons/dollar-5.png" alt=""></figure> --}}
                             <figure class="image image-13"><img src="{{ asset('assets/frontend') }}/images/icons/arrow-4.png" alt=""></figure>
                         </div>
                     </div>
@@ -49,176 +52,7 @@
             </div>
         </section>
         <!-- banner-section end -->
-    
-    
-        <!--  service-section -->
-        <section class="service-section">
-            <div class="auto-container">
-                <div class="sec-title text-center">
-                    <p>More than Solutions</p>
-                    <h2>Data sceince solutions for startup<br />and enterprises</h2>
-                    <div class="decor" style="background-image: url({{ asset('assets/frontend') }}/images/icons/decor-1.png);"></div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="service-details.html">Data Science</a></h4>
-                                <div class="icon-box">
-                                    <span class="border-layer"></span>
-                                    <i class="flaticon-data"></i>
-                                </div>
-                                <p>Simple & easy distinguish in a free hour, when our power choice prevents</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="service-details.html">Machine Learning</a></h4>
-                                <div class="icon-box">
-                                    <span class="border-layer"></span>
-                                    <i class="flaticon-brain"></i>
-                                </div>
-                                <p>Claims duty the obligations of busines it will frequently occur that all pleasures.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="service-details.html">Artificial Intelligence</a></h4>
-                                <div class="icon-box">
-                                    <span class="border-layer"></span>
-                                    <i class="flaticon-vr"></i>
-                                </div>
-                                <p>Therefore always hold these matters to this principle of reject pleasures secure.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="service-details.html">BI Implementation</a></h4>
-                                <div class="icon-box">
-                                    <span class="border-layer"></span>
-                                    <i class="flaticon-cloud-computing"></i>
-                                </div>
-                                <p>Trouble that bound ensue equaly blame belongs to those through weakness. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- service-section end -->
-    
-    
-        <!-- about-section -->
-        <section class="about-section">
-            <div class="auto-container">
-                <div class="tabs-box">
-                    <div class="tabs-content" id="content_block_01">
-                        <div class="tab active-tab" id="tab-1">
-                            <div class="row clearfix">
-                                <div class="col-lg-4 col-md-6 col-sm-12 content-column">
-                                    <div class="content-box">
-                                        <div class="sec-title text-left">
-                                            <p>About Company</p>
-                                            <h2>Mission is to bring the power of AI to every business</h2>
-                                            <div class="decor" style="background-image: url({{ asset('assets/frontend') }}/images/icons/decor-1.png);"></div>
-                                        </div>
-                                        <div class="text">
-                                            <p>As a solution providing company we offer a wide range of consulting, development & quality services with 100% satisfaction.</p>
-                                        </div>
-                                        <ul class="list-item clearfix">
-                                            <li><span class="dots"></span>Idea of denouncing pleasure & praising</li>
-                                            <li><span class="dots"></span>Ever undertakes laborious physical</li>
-                                            <li><span class="dots"></span>Avoids a pain that produces no resultant</li>
-                                            <li><span class="dots"></span>Great explorer of the real truth</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-sm-12 inner-column">
-                                    <div class="inner-box">
-                                        <div class="video-inner" style="background-image: url({{ asset('assets/frontend') }}/images/background/video-1.jpg);">
-                                            <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-2">
-                            <div class="row clearfix">
-                                <div class="col-lg-4 col-md-6 col-sm-12 content-column">
-                                    <div class="content-box">
-                                        <div class="sec-title text-left">
-                                            <p>About Company</p>
-                                            <h2>Vison is to bring the power of AI to every business</h2>
-                                            <div class="decor" style="background-image: url({{ asset('assets/frontend') }}/images/icons/decor-1.png);"></div>
-                                        </div>
-                                        <div class="text">
-                                            <p>As a solution providing company we offer a wide range of consulting, development & quality services with 100% satisfaction.</p>
-                                        </div>
-                                        <ul class="list-item clearfix">
-                                            <li><span class="dots"></span>Idea of denouncing pleasure & praising</li>
-                                            <li><span class="dots"></span>Ever undertakes laborious physical</li>
-                                            <li><span class="dots"></span>Avoids a pain that produces no resultant</li>
-                                            <li><span class="dots"></span>Great explorer of the real truth</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-sm-12 inner-column">
-                                    <div class="inner-box">
-                                        <div class="video-inner" style="background-image: url({{ asset('assets/frontend') }}/images/background/video-1.jpg);">
-                                            <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-3">
-                            <div class="row clearfix">
-                                <div class="col-lg-4 col-md-6 col-sm-12 content-column">
-                                    <div class="content-box">
-                                        <div class="sec-title text-left">
-                                            <p>About Company</p>
-                                            <h2>Vison is to bring the power of AI to every business</h2>
-                                            <div class="decor" style="background-image: url({{ asset('assets/frontend') }}/images/icons/decor-1.png);"></div>
-                                        </div>
-                                        <div class="text">
-                                            <p>As a solution providing company we offer a wide range of consulting, development & quality services with 100% satisfaction.</p>
-                                        </div>
-                                        <ul class="list-item clearfix">
-                                            <li><span class="dots"></span>Idea of denouncing pleasure & praising</li>
-                                            <li><span class="dots"></span>Ever undertakes laborious physical</li>
-                                            <li><span class="dots"></span>Avoids a pain that produces no resultant</li>
-                                            <li><span class="dots"></span>Great explorer of the real truth</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-sm-12 inner-column">
-                                    <div class="inner-box">
-                                        <div class="video-inner" style="background-image: url({{ asset('assets/frontend') }}/images/background/video-1.jpg);">
-                                            <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-btn-box">
-                        <ul class="tab-btns tab-buttons clearfix">
-                            <li class="tab-btn active-btn" data-tab="#tab-1"><h4>Our Mission</h4></li>
-                            <li class="tab-btn" data-tab="#tab-2"><h4>Our Vison</h4></li>
-                            <li class="tab-btn" data-tab="#tab-3"><h4>Core Values</h4></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about-section end -->
-    
+
     
         <!-- work-process -->
         <section class="work-process">
@@ -275,96 +109,6 @@
             </div>
         </section>
         <!-- work-process end -->
-    
-    
-        <!-- industries-section -->
-        <section class="industries-section">
-            <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-57.png);"></div>
-                <div class="pattern-2" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-58.png);"></div>
-            </div>
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                        <div class="content-box">
-                            <div class="sec-title text-left light">
-                                <p>Industries</p>
-                                <h2>Industries we are transforming our awesome solutions</h2>
-                                <div class="decor" style="background-image: url({{ asset('assets/frontend') }}/images/icons/decor-2.png);"></div>
-                            </div>
-                            <div class="btn-box"><a href="index.html" class="btn-style-four">View All Industries<span>+</span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 inner-column">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-3.png);"></div>
-                            <div class="inner">
-                                <span>Industry</span>
-                                <h4><a href="index.html">Trasportation &<br />Logistics</a></h4>
-                                <div class="btn-box clearfix"><a href="index.html"><i class="flaticon-arrow"></i></a></div>
-                                <div class="icon-box"><i class="flaticon-product"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 inner-column">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-3.png);"></div>
-                            <div class="inner">
-                                <span>Industry</span>
-                                <h4><a href="index.html">Media &<br />Entertainment</a></h4>
-                                <div class="btn-box clearfix"><a href="index.html"><i class="flaticon-arrow"></i></a></div>
-                                <div class="icon-box"><i class="flaticon-joystick"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 inner-column">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-3.png);"></div>
-                            <div class="inner">
-                                <span>Industry</span>
-                                <h4><a href="index.html">Travel &<br />Hospitality</a></h4>
-                                <div class="btn-box clearfix"><a href="index.html"><i class="flaticon-arrow"></i></a></div>
-                                <div class="icon-box"><i class="flaticon-travel"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 inner-column">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-3.png);"></div>
-                            <div class="inner">
-                                <span>Industry</span>
-                                <h4><a href="index.html">Financials &<br />Banking</a></h4>
-                                <div class="btn-box clearfix"><a href="index.html"><i class="flaticon-arrow"></i></a></div>
-                                <div class="icon-box"><i class="flaticon-bank"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 inner-column">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-3.png);"></div>
-                            <div class="inner">
-                                <span>Industry</span>
-                                <h4><a href="index.html">Healthcare &<br />Medicine</a></h4>
-                                <div class="btn-box clearfix"><a href="index.html"><i class="flaticon-arrow"></i></a></div>
-                                <div class="icon-box"><i class="flaticon-medicine"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 inner-column">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-3.png);"></div>
-                            <div class="inner">
-                                <span>Industry</span>
-                                <h4><a href="index.html">Advertising &<br />Marketing</a></h4>
-                                <div class="btn-box clearfix"><a href="index.html"><i class="flaticon-arrow"></i></a></div>
-                                <div class="icon-box"><i class="flaticon-billboard"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- industries-section end -->
     
     
         <!-- skills-section -->
@@ -510,68 +254,6 @@
         <!-- testimonial-section end -->
     
     
-        <!-- case-section -->
-        <section class="case-section">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="sec-title text-center">
-                        <p>Case Studies</p>
-                        <h2>What our clients say about our<br />awesome solutions</h2>
-                        <div class="decor" style="background-image: url({{ asset('assets/frontend') }}/images/icons/decor-1.png);"></div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-3 col-md-6 col-sm-12 case-block">
-                            <div class="case-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ asset('assets/frontend') }}/images/gallery/case-1.png" class="lightbox-image" data-fancybox="gallery"><img src="{{ asset('assets/frontend') }}/images/gallery/case-1.png" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <p>Banking & Finance</p>
-                                        <h4><a href="project-details.html">Consulting on invoice data capture</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 case-block">
-                            <div class="case-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ asset('assets/frontend') }}/images/gallery/case-2.png" class="lightbox-image" data-fancybox="gallery"><img src="{{ asset('assets/frontend') }}/images/gallery/case-2.png" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <p>Entertainment</p>
-                                        <h4><a href="project-details.html">Automate feedback analysis</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 case-block">
-                            <div class="case-block-one wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ asset('assets/frontend') }}/images/gallery/case-3.png" class="lightbox-image" data-fancybox="gallery"><img src="{{ asset('assets/frontend') }}/images/gallery/case-3.png" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <p>Banking & Finance</p>
-                                        <h4><a href="project-details.html">Big data processing implementation</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 case-block">
-                            <div class="case-block-one wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ asset('assets/frontend') }}/images/gallery/case-4.png" class="lightbox-image" data-fancybox="gallery"><img src="{{ asset('assets/frontend') }}/images/gallery/case-4.png" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <p>Healthcare</p>
-                                        <h4><a href="project-details.html">BI implementation for baby care App</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="more-btn"><a href="project-details.html" class="btn-style-four">All Case Studies<span>+</span></a></div>
-                </div>
-            </div>
-        </section>
-        <!-- case-section end -->
-    
-    
         <!-- fun-fact -->
         <section class="fun-fact">
             <div class="auto-container">
@@ -690,40 +372,5 @@
             </div>
         </section>
         <!-- news-section end -->
-    
-    
-        <!-- clients-section -->
-        <section class="clients-section text-center">
-            <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/shape-59.png);"></div>
-            <div class="image-layer">
-                <figure class="image-1 rotate-me"><img src="{{ asset('assets/frontend') }}/images/icons/wheel-6.png" alt=""></figure>
-                <figure class="image-2 rotate-me"><img src="{{ asset('assets/frontend') }}/images/icons/wheel-7.png" alt=""></figure>
-            </div>
-            <div class="auto-container">
-                <div class="title-inner">
-                    <h2>Trusted by innovative companies</h2>
-                    <p>Always holds in these matters to this principle of selection: he rejects pleasures to secure other greater<br />pleasures, or else he endures pains to avoid</p>
-                </div>
-                <div class="clients-carousel owl-carousel owl-theme owl-nav-none">
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-1.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-2.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-3.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-4.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-5.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-1.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-2.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-3.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-4.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-5.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-1.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-2.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-3.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-4.png" alt=""></a></figure>
-                    <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/frontend') }}/images/clients/clients-logo-5.png" alt=""></a></figure>
-                </div>
-            </div>
-        </section>
-        <!-- clients-section end -->
-    
     
 @endsection
