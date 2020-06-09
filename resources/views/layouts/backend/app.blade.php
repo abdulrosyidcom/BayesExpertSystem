@@ -93,6 +93,10 @@
                             <a class="nav-item-hold" href="/admin/diseases"><i class="fas fa-disease"></i><span class="nav-text">Penyakit</span></a>
                             <div class="triangle"></div>
                         </li>
+                        <li class="nav-item {{ Request::is('admin/rules') ? 'active' : '' }}">
+                            <a class="nav-item-hold" href="/admin/rules"><i class="fas fa-hand-sparkles"></i><span class="nav-text">Rules</span></a>
+                            <div class="triangle"></div>
+                        </li>
                         <li class="nav-item {{ Request::is('admin/posts') ? 'active' : '' }}" data-item="posts">
                             <a class="nav-item-hold" href="/admin/posts"><i class="fas fa-align-justify"></i><span class="nav-text">Posts</span></a>
                             <div class="triangle"></div>

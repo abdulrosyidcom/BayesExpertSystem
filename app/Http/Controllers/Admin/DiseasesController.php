@@ -37,6 +37,15 @@ class DiseasesController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'code' => 'required',
+            'name' => 'required',
+            'probability' => 'required',
+            'appear' => 'required',
+            'information' => 'required',
+            'suggestion' => 'required',
+        ]);
+
         Disease::create($request->all());
         return redirect('admin/diseases')->with('toast_success', 'Data Penyakit Berhasil Ditambahkan');
     }
@@ -58,9 +67,9 @@ class DiseasesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Disease $disease)
     {
-        //
+        return view('admin.diseases.edit', compact('disease'));
     }
 
     /**
@@ -72,7 +81,25 @@ class DiseasesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'code' => 'required',
+            'name' => 'required',
+            'probability' => 'required',
+            'appear' => 'required',
+            'information' => 'required',
+            'suggestion' => 'required',
+        ]);
+
+        Disease::where('id', $id)->update([
+            'code' => $request->code,
+            'name' => $request->name,
+            'probability' => $request->probability,
+            'appear' => $request->appear,
+            'information' => $request->information,
+            'suggestion' => $request->suggestion,
+        ]);
+
+        return redirect('admin/diseases')->with('toast_success', 'Data Penyakit Berhasil Ditambahkan');
     }
 
     /**

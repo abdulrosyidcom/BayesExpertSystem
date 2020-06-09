@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Disease;
 use App\Http\Controllers\Controller;
+use App\Rule;
 use App\Symptom;
 use Illuminate\Http\Request;
 
-class SymptomsController extends Controller
+class RulesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +17,8 @@ class SymptomsController extends Controller
      */
     public function index()
     {
-        $symptoms = Symptom::all();
-        return view('admin.symptoms.index', compact('symptoms'));
+        $rules = Rule::latest()->get();
+        return view('admin.rules.index', compact('rules'));
     }
 
     /**
@@ -26,7 +28,9 @@ class SymptomsController extends Controller
      */
     public function create()
     {
-        return view('admin.symptoms.create');
+        $diseases = Disease::latest()->get();
+        $symptoms = Symptom::latest()->get();
+        return view('admin.rules.create', compact('diseases', 'symptoms'));
     }
 
     /**
@@ -37,13 +41,13 @@ class SymptomsController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'code' => 'required',
-            'symptom' => 'required',
+        Rule::create([
+            'disease_id' => $request->disease_id,
+            'symptom_id' => $request->symptom_id,
+            'probability' => $request->probability
         ]);
 
-        Symptom::create($request->all());
-        return redirect('admin/symptoms')->with('toast_success', 'Data Gejala Berhasil Ditambahkan');
+        return redirect('/admin/rules')->with('toast_success', 'Data Rule Berhasil Ditambahkan');
     }
 
     /**
@@ -63,9 +67,11 @@ class SymptomsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Symptom $symptom)
+    public function edit(Rule $rule)
     {
-        return view('admin.symptoms.edit', compact('symptom'));
+        $diseases = Disease::latest()->get();
+        $symptoms = Symptom::latest()->get();
+        return view('admin.rules.edit', compact('rule', 'diseases', 'symptoms'));
     }
 
     /**
@@ -75,18 +81,21 @@ class SymptomsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Symptom $symptom)
+    public function update(Request $request, $id)
     {
         $request->validate([
-            'code' => 'required',
-            'symptom' => 'required',
+            'disease_id' => 'required',
+            'symptom_id' => 'required',
+            'probability' => 'required',
         ]);
 
-        Symptom::where('id', $symptom->id)->update([
-            'code' => $request->code,
-            'symptom' => $request->symptom
+        Rule::where('id', $id)->update([
+            'disease_id' => $request->disease_id,
+            'symptom_id' => $request->symptom_id,
+            'probability' => $request->probability
         ]);
-        return redirect('admin/symptoms')->with('toast_success', 'Data Gejala Berhasil Diubah');
+
+        return redirect('/admin/rules')->with('toast_success', 'Data Rule Berhasil Ditambahkan');
     }
 
     /**
@@ -97,7 +106,7 @@ class SymptomsController extends Controller
      */
     public function destroy($id)
     {
-        Symptom::destroy($id);
-        return redirect('admin/symptoms')->with('toast_success', 'Data Gejala Berhasil Dihapus');
+        Rule::destroy($id);
+        return redirect('/admin/rules')->with('toast_success', 'Data Rule Berhasil Dihapus');
     }
 }

@@ -18,11 +18,13 @@
                         @csrf
                         <div class="form-group">
                             <label for="code">Kode</label>
-                            <input class="form-control" name="code" id="code" type="text" placeholder="Kode Gejala" />
+                            <input class="form-control @error('code') is-invalid @enderror" name="code" id="code" type="text" placeholder="Kode Gejala" />
+                            @error('code') <small class="form-text text-danger">{{ $message }}</small> @enderror
                         </div>
                         <div class="form-group">
                             <label for="symptom">Nama Gejala</label>
-                            <input class="form-control" name="symptom" id="symptom" type="text" placeholder="Nama Gejala" />
+                            <input class="form-control @error('symptom') is-invalid @enderror" name="symptom" id="symptom" type="text" placeholder="Nama Gejala" />
+                            @error('symptom') <small class="form-text text-danger">{{ $message }}</small> @enderror
                         </div>
                         <button type="submit" class="btn btn-primary pd-x-20 mt-2">Create</button>
                     </form>

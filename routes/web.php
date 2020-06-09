@@ -28,6 +28,7 @@ Route::group(
         Route::resource('symptoms', 'SymptomsController');
         Route::resource('diseases', 'DiseasesController');
         Route::resource('posts', 'PostsController');
+        Route::resource('rules', 'RulesController');
         Route::resource('categories', 'CategoriesController');
         Route::resource('tags', 'TagsController');
 

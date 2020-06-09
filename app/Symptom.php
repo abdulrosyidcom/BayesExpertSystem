@@ -8,8 +8,8 @@ class Symptom extends Model
 {
     protected $fillable = ['code', 'symptom'];
 
-    public function datasets()
+    public function rules()
     {
-        return $this->belongsToMany(Dataset::class)->withTimestamps();
+        return $this->hasMany(Rule::class);
     }
 }

@@ -8,8 +8,8 @@ class Disease extends Model
 {
     protected $fillable = ['code', 'name', 'probability', 'appear', 'information', 'suggestion'];
 
-    public function datasets()
+    public function rules()
     {
-        return $this->belongsToMany(Dataset::class)->withTimestamps();
+        return $this->hasMany(Rule::class);
     }
 }
