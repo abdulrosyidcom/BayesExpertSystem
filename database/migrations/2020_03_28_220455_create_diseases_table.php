@@ -19,8 +19,8 @@ class CreateDiseasesTable extends Migration
             $table->string('name');
             $table->double('probability');
             $table->integer('appear');
-            $table->string('information');
-            $table->string('suggestion');
+            $table->text('information');
+            $table->text('suggestion');
             $table->timestamps();
         });
     }

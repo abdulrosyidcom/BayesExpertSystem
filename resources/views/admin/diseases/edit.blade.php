@@ -9,7 +9,7 @@
 <div class="separator-breadcrumb border-top"></div><!-- end of main-content -->
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
         <p>Tambah Data Penyakit</p>
         <div class="card mb-5">
             <div class="card-body">
@@ -39,12 +39,12 @@
                         </div>
                         <div class="form-group">
                             <label for="information">Informasi</label>
-                            <textarea class="form-control @error('information') is-invalid @enderror" name="information" id="information" type="text">{{ $disease->information }}</textarea>
+                            <textarea class="ckeditor" id="information" type="text">{{ $disease->information }}</textarea>
                             @error('information') <small class="form-text text-danger">{{ $message }}</small> @enderror
                         </div>
                         <div class="form-group">
                             <label for="suggestion">Saran</label>
-                            <textarea class="form-control @error('suggestion') is-invalid @enderror" name="suggestion" id="suggestion">{{ $disease->suggestion }}</textarea>
+                            <textarea class="ckeditor" name="suggestion" id="suggestion">{{ $disease->suggestion }}</textarea>
                             @error('suggestion') <small class="form-text text-danger">{{ $message }}</small> @enderror
                         </div>
                         <button type="submit" class="btn btn-primary pd-x-20 mt-2">Update</button>
@@ -55,3 +55,7 @@
     </div>
 </div>
 @endsection
+
+@push('js')
+<script src="{{ asset('assets/backend/js/plugins/ckeditor/ckeditor.js') }}"></script>
+@endpush

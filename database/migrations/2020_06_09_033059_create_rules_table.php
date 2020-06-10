@@ -19,7 +19,7 @@ class CreateRulesTable extends Migration
             $table->foreign('disease_id')->references('id')->on('diseases')->onDelete('cascade');
             $table->unsignedBigInteger('symptom_id');
             $table->foreign('symptom_id')->references('id')->on('symptoms')->onDelete('cascade');
-            $table->string('probability');
+            $table->double('probability');
             $table->timestamps();
         });
     }
