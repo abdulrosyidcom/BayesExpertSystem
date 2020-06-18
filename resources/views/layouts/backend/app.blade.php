@@ -113,6 +113,10 @@
                             <a class="nav-item-hold active" href="/users/dashboard"><i class="fas fa-tachometer-alt"></i><span class="nav-text">Dashboard</span></a>
                             {{-- <div class="triangle"></div> --}}
                         </li>
+                        <li class="nav-item {{ Request::is('users/diagnosis') ? 'active' : '' }}">
+                            <a class="nav-item-hold active" href="/users/diagnosis"><i class="fas fa-diagnoses"></i><span class="nav-text">Diagnosis</span></a>
+                            {{-- <div class="triangle"></div> --}}
+                        </li>
                         <li class="nav-item {{ Request::is('users/settings') ? 'active' : '' }}" data-item="settingsUsers">
                             <a class="nav-item-hold" href="/admin/posts"><i class="fas fa-users-cog"></i><span class="nav-text">Settings</span></a>
                             <div class="triangle"></div>

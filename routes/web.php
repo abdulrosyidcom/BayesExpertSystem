@@ -52,8 +52,13 @@ Route::group(
 
         Route::get('/profile', 'SettingsController@profile');
         Route::patch('/profile/update', 'SettingsController@profileUpdate');
-        Route::get('/password', 'SettingsController@password')->name('backend.password');
-        Route::patch('/updatePassword', 'SettingsController@updatePassword')->name('backend.updatePassword');
+        Route::get('/password', 'SettingsController@password')->name('users.password');
+        Route::patch('/updatePassword', 'SettingsController@updatePassword')->name('users.updatePassword');
+
+        // diagnosis
+        Route::get('/diagnosis', 'DiagnosisController@index')->name('users.diagnosis');
+        // END::diagnosis
+
     }
 );
 
