@@ -17,7 +17,7 @@
     <div class="col-md-12 mb-4">
         <div class="card text-left">
             <div class="card-body">
-                <h4 class="card-title mb-3">Data Penyakit</h4>
+                <h4 class="card-title mb-3">Data Ruke</h4>
                 <p>Sistem pakar diagnosa penyakit ginjal</p>
                 <div class="table-responsive">
                     <table class="display table table-striped table-bordered" id="zero_configuration_table" style="width:100%">

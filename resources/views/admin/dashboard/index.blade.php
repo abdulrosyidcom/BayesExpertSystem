@@ -42,6 +42,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card card-icon mb-4">
+                    <div class="card-body text-center"><i class="i-Money-2"></i>
+                        <p class="text-muted mt-2 mb-2">Rule</p>
+                        <p class="text-primary text-24 line-height-1 m-0">{{ $rules->count() }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

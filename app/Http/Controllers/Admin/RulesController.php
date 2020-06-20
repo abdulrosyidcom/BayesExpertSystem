@@ -41,6 +41,12 @@ class RulesController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'disease_id' => 'required',
+            'symptom_id' => 'required',
+            'probability' => 'required',
+        ]);
+
         Rule::create([
             'disease_id' => $request->disease_id,
             'symptom_id' => $request->symptom_id,
