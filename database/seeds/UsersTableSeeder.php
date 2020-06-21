@@ -37,7 +37,7 @@ class UsersTableSeeder extends Seeder
             'role_id' => '2',
             'name' => 'Rosyid Abdul',
             'username' => 'rosyidabdul',
-            'email' => 'rosyidabdul@gmail.com',
+            'email' => 'abdulrosyidit@gmail.com',
             'password' => bcrypt('amikom123'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),

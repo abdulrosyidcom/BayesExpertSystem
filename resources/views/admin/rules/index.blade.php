@@ -32,12 +32,12 @@
                         </thead>
                         <tbody>
 
+                            @foreach ($rules as $rule)
                             <tr>
-                                @foreach ($rules as $rule)
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $rule->disease->name }}</td>
                                     <td>{{ $rule->symptom->symptom }}</td>
-                                    <td>{{ $rule->probability }}</td>
+                                    <td>{{ number_format($rule->probability, 2) }}</td>
                                     <td>
 
                                         <a href="/admin/rules/{{ $rule->id }}/edit" class="btn btn-primary btn-sm float-left mr-1">
@@ -53,8 +53,8 @@
                                         </form>
 
                                     </td>
+                                </tr>
                                 @endforeach
-                            </tr>
 
                         </tbody>
                         <tfoot>

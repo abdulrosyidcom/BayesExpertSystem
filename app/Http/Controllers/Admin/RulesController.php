@@ -17,7 +17,7 @@ class RulesController extends Controller
      */
     public function index()
     {
-        $rules = Rule::latest()->get();
+        $rules = Rule::all();
         return view('admin.rules.index', compact('rules'));
     }
 
