@@ -57,6 +57,8 @@ Route::group(
 
         // diagnosis
         Route::get('/diagnosis', 'DiagnosisController@index')->name('users.diagnosis');
+        Route::post('/diagnosis/proccess', 'DiagnosisController@proccess')->name('diagnosis.proccess');
+        // Route::get('/diagnosis/results', 'DiagnosisController@results')->name('diagnosis.results');
         // END::diagnosis
 
     }

@@ -13,11 +13,13 @@
     <div class="col-md-12 mb-4">
         <div class="card text-left">
             <div class="card-body">
-                <form action="" method="POST">
-                    
+                <form action="{{ route('users.diagnosis.proccess') }}" method="POST">
+                    @csrf
                     @foreach ($symtoms as $symtom)
                         <label class="checkbox checkbox-outline-primary">
-                            <input type="checkbox" id="{{ $symtom->id }}" name="symtom[]" value="{{ $symtom->id }}"/><span>{{ $symtom->symptom }}</span><span class="checkmark"></span>
+                            <input type="checkbox" id="{{ $symtom->id }}" name="symptom[]" value="{{ $symtom->id }}"/>
+                            <span>{{ $symtom->symptom }}</span>
+                            <span class="checkmark"></span>
                         </label>
                     @endforeach
 
