@@ -7,6 +7,8 @@ use App\Symptom;
 use App\Temporary;
 use App\TemporaryFinal;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Mavinoo\Batch\Batch;
 
 class DiagnosisController extends Controller
 {
@@ -25,13 +27,19 @@ class DiagnosisController extends Controller
             Temporary::create(['symptom_id' => $symptoms]);
         }
 
-        $tempraries = Temporary::all();
+        // $query = DB::select("SELECT `rules`.`disease_id`,`rules`.`symptom_id`, `rules`.`probability` from `rules` JOIN `temporaries` ON `rules`.`symptom_id` = `temporaries`.`symptom_id` ORDER BY `rules`.`symptom_id` ASC");
 
-        foreach ($tempraries->rule() as $rule) {
-            TemporaryFinal::create([
-                'disease_id' => $rule->disease_id,
-                'symptom_id' => $rule->symptom_id,
-                'probability' => $rule->probability,
+        $queryTemporaryFinal = DB::table('rules')
+            ->join('temporaries', 'rules.symptom_id', '=', 'temporaries.symptom_id')
+            ->select('rules.disease_id', 'rules.symptom_id', 'rules.probability')
+            ->orderBy('rules.symptom_id', 'asc')
+            ->get();
+
+        foreach ($queryTemporaryFinal as $qtf) {
+            DB::table('temporary_finals')->insert([
+                'disease_id' => $qtf->disease_id,
+                'symptom_id' => $qtf->symptom_id,
+                'probability' => $qtf->probability
             ]);
         }
 
