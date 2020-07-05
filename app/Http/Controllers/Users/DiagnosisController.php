@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Users;
 
+use App\Disease;
 use App\Http\Controllers\Controller;
 use App\Symptom;
 use App\Temporary;
@@ -16,6 +17,69 @@ class DiagnosisController extends Controller
     {
         $symtoms = Symptom::all();
         return view('users.diagnosis.index', compact('symtoms'));
+    }
+
+    public function getProbGagalGinjal()
+    {
+        $total = 1;
+        foreach (TemporaryFinal::where('disease_id', 1)->get() as $probKidney) {
+            $total = $total * $probKidney->probability;
+        }
+
+        foreach (Disease::where('id', 1)->get() as $data) {
+            $result = $total * $data->probability;
+        }
+        return $result;
+    }
+
+    public function getProbKankerGinjal()
+    {
+        //
+    }
+
+    public function getProbInfeksiGinjal()
+    {
+        //
+    }
+
+    public function getProbSindromNefrotik()
+    {
+        //
+    }
+
+    public function getProbHidronefrosis()
+    {
+        //
+    }
+
+    public function getProbKankerKandungKemih()
+    {
+        //
+    }
+
+    public function getProbGinjalPolikistik()
+    {
+        //
+    }
+
+    public function getProbNefritisInterstisial()
+    {
+        //
+    }
+
+    public function getProbSistitisInterstisialis()
+    {
+        //
+    }
+
+    public function getProbInfeksiSaluranKemih()
+    {
+        //
+    }
+
+    public function getProbBatuGinjal()
+    {
+        //
     }
 
     public function proccess(Request $request)
