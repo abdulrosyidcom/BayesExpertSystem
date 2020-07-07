@@ -99,7 +99,7 @@ class DiseasesController extends Controller
             'suggestion' => $request->suggestion,
         ]);
 
-        return redirect('admin/diseases')->with('toast_success', 'Data Penyakit Berhasil Ditambahkan');
+        return redirect('admin/diseases')->with('toast_success', 'Data Penyakit Berhasil Diubah');
     }
 
     /**

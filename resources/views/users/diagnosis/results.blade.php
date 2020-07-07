@@ -15,7 +15,7 @@
             <div class="card mb-2">
                 <div class="card-body">
                     <div class="ul-widget__row">
-                        <div class="ul-widget-stat__font"><i class="i-Bar-Chart text-danger"></i></div>
+                        <div class="ul-widget-stat__font"><i class="fas fa-disease text-danger"></i></div>
                         <div class="ul-widget__content">
                             @foreach ($diagnosisMax as $diagnosaMax)
                             <p class="m-0">{{ $diagnosaMax->name }}</p>
@@ -36,7 +36,7 @@
                         <p class="text-muted">{{ $diagnosaMax->created_at }}</p>
                     </div>
                     <p>
-                        {{ $diagnosaMax->information }}
+                        {!! $diagnosaMax->information !!}
                     </p>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                         <p class="text-muted">{{ $diagnosaMax->created_at }}</p>
                     </div>
                     <p>
-                        {{ $diagnosaMax->suggestion }}
+                        {!! $diagnosaMax->suggestion !!}
                     </p>
                 </div>
             </div>
@@ -57,7 +57,7 @@
     </div>
 </section>
 
-<div class="separator-breadcrumb border-top"></div>
+<div class="separator-breadcrumb border-top mt-5"></div>
 
 <!-- end of row-->
 <div class="row mb-4">

@@ -29,35 +29,21 @@
             <div class="d-flex align-items-center">
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
-                    <i class="search-icon text-muted i-Magnifi-Glass1"></i>
+                    <i class="fas fa-search text-muted"></i>
                 </div>
             </div>
             <div style="margin: auto"></div>
             <div class="header-part-right">
                 <!-- Full screen toggle -->
-                <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen></i>
-                <!-- Grid menu Dropdown -->
-                <div class="dropdown">
-                    <i class="i-Safe-Box text-muted header-icon" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <div class="menu-icon-grid">
-                            <a href="blank.html#"><i class="i-Shop-4"></i> Home</a>
-                            <a href="blank.html#"><i class="i-Library"></i> UI Kits</a>
-                            <a href="blank.html#"><i class="i-Drop"></i> Apps</a>
-                            <a href="blank.html#"><i class="i-File-Clipboard-File--Text"></i> Forms</a>
-                            <a href="blank.html#"><i class="i-Checked-User"></i> Sessions</a>
-                            <a href="blank.html#"><i class="i-Ambulance"></i> Support</a>
-                        </div>
-                    </div>
-                </div>
-               
+                <i class="fas fa-desktop header-icon d-none d-sm-inline-block" data-fullscreen></i>
+                
                 <!-- User avatar dropdown -->
                 <div class="dropdown">
                     <div class="user col align-self-end">
                         <img src="{{ asset('storage/users/' . Auth::user()->image) }}" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                             <div class="dropdown-header">
-                                <i class="i-Lock-User mr-1"></i> {{ Auth::user()->name }}
+                                <i class="fas fa-user"></i> {{ Auth::user()->name }}
                             </div>
                             @if (Request::is('admin*'))
                             <a href="{{ url('admin/profile') }}" class="dropdown-item">Account settings</a>
@@ -183,136 +169,7 @@
             </div>
             <!-- fotter end -->
         </div>
-    </div><!-- ============ Search UI Start ============= -->
-    <div class="search-ui">
-        <div class="search-header">
-            <img src="{{ asset('assets/backend') }}/images/logo.png" alt="" class="logo">
-            <button class="search-close btn btn-icon bg-transparent float-right mt-2">
-                <i class="i-Close-Window text-22 text-muted"></i>
-            </button>
-        </div>
-        <input type="text" placeholder="Type here" class="search-input" autofocus>
-        <div class="search-title">
-            <span class="text-muted">Search results</span>
-        </div>
-        <div class="search-results list-horizontal">
-            <div class="list-item col-md-12 p-0">
-                <div class="card o-hidden flex-row mb-4 d-flex">
-                    <div class="list-thumb d-flex">
-                        <!-- TUMBNAIL -->
-                        <img src="{{ asset('assets/backend') }}//images/products/headphone-1.jpg" alt="">
-                    </div>
-                    <div class="flex-grow-1 pl-2 d-flex">
-                        <div class="card-body align-self-center d-flex flex-column justify-content-between align-items-lg-center flex-lg-row">
-                            <!-- OTHER DATA -->
-                            <a href="blank.html" class="w-40 w-sm-100">
-                                <div class="item-title">Headphone 1</div>
-                            </a>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">Gadget</p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">$300
-                                <del class="text-secondary">$400</del>
-                            </p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100 d-none d-lg-block item-badges">
-                                <span class="badge badge-danger">Sale</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-item col-md-12 p-0">
-                <div class="card o-hidden flex-row mb-4 d-flex">
-                    <div class="list-thumb d-flex">
-                        <!-- TUMBNAIL -->
-                        <img src="{{ asset('assets/backend') }}//images/products/headphone-2.jpg" alt="">
-                    </div>
-                    <div class="flex-grow-1 pl-2 d-flex">
-                        <div class="card-body align-self-center d-flex flex-column justify-content-between align-items-lg-center flex-lg-row">
-                            <!-- OTHER DATA -->
-                            <a href="blank.html" class="w-40 w-sm-100">
-                                <div class="item-title">Headphone 1</div>
-                            </a>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">Gadget</p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">$300
-                                <del class="text-secondary">$400</del>
-                            </p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100 d-none d-lg-block item-badges">
-                                <span class="badge badge-primary">New</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-item col-md-12 p-0">
-                <div class="card o-hidden flex-row mb-4 d-flex">
-                    <div class="list-thumb d-flex">
-                        <!-- TUMBNAIL -->
-                        <img src="{{ asset('assets/backend') }}//images/products/headphone-3.jpg" alt="">
-                    </div>
-                    <div class="flex-grow-1 pl-2 d-flex">
-                        <div class="card-body align-self-center d-flex flex-column justify-content-between align-items-lg-center flex-lg-row">
-                            <!-- OTHER DATA -->
-                            <a href="blank.html" class="w-40 w-sm-100">
-                                <div class="item-title">Headphone 1</div>
-                            </a>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">Gadget</p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">$300
-                                <del class="text-secondary">$400</del>
-                            </p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100 d-none d-lg-block item-badges">
-                                <span class="badge badge-primary">New</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-item col-md-12 p-0">
-                <div class="card o-hidden flex-row mb-4 d-flex">
-                    <div class="list-thumb d-flex">
-                        <!-- TUMBNAIL -->
-                        <img src="{{ asset('assets/backend') }}//images/products/headphone-4.jpg" alt="">
-                    </div>
-                    <div class="flex-grow-1 pl-2 d-flex">
-                        <div class="card-body align-self-center d-flex flex-column justify-content-between align-items-lg-center flex-lg-row">
-                            <!-- OTHER DATA -->
-                            <a href="blank.html" class="w-40 w-sm-100">
-                                <div class="item-title">Headphone 1</div>
-                            </a>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">Gadget</p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100">$300
-                                <del class="text-secondary">$400</del>
-                            </p>
-                            <p class="m-0 text-muted text-small w-15 w-sm-100 d-none d-lg-block item-badges">
-                                <span class="badge badge-primary">New</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- PAGINATION CONTROL -->
-        <div class="col-md-12 mt-5 text-center">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination d-inline-flex">
-                    <li class="page-item">
-                        <a class="page-link" href="blank.html#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="blank.html#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="blank.html#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="blank.html#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="blank.html#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
-    <!-- ============ Search UI End ============= -->
 
     <script src="{{ asset('assets/backend') }}/js/plugins/jquery-3.3.1.min.js"></script>
     <script src="{{ asset('assets/backend') }}/js/plugins/bootstrap.bundle.min.js"></script>

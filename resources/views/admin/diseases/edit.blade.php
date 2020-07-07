@@ -4,13 +4,13 @@
 
 @section('content')
 <div class="breadcrumb">
-    <h1>Create Penyakit</h1>
+    <h1>Update Penyakit</h1>
 </div>
 <div class="separator-breadcrumb border-top"></div><!-- end of main-content -->
 
 <div class="row">
     <div class="col-md-8">
-        <p>Tambah Data Penyakit</p>
+        <p>Ubah Data Penyakit</p>
         <div class="card mb-5">
             <div class="card-body">
                 <div class="d-flex flex-column">
@@ -39,7 +39,7 @@
                         </div>
                         <div class="form-group">
                             <label for="information">Informasi</label>
-                            <textarea class="ckeditor" id="information" type="text">{{ $disease->information }}</textarea>
+                            <textarea class="ckeditor" name="information" type="text">{{ $disease->information }}</textarea>
                             @error('information') <small class="form-text text-danger">{{ $message }}</small> @enderror
                         </div>
                         <div class="form-group">
