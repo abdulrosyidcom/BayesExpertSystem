@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-        Mavinoo\Batch\BatchServiceProvider::class,
+        // Mavinoo\Batch\BatchServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -226,7 +226,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Batch' => Mavinoo\Batch\BatchFacade::class,
+        // 'Batch' => Mavinoo\Batch\BatchFacade::class,
     ],
 
 ];

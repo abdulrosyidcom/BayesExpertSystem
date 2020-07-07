@@ -17,8 +17,10 @@
                     <div class="ul-widget__row">
                         <div class="ul-widget-stat__font"><i class="i-Bar-Chart text-danger"></i></div>
                         <div class="ul-widget__content">
-                            <p class="m-0">Nama Penyakit</p>
-                            <h4 class="heading">80%</h4>
+                            @foreach ($diagnosisMax as $diagnosaMax)
+                            <p class="m-0">{{ $diagnosaMax->name }}</p>
+                            <h4 class="heading">{{ floor($diagnosaMax->results * 100) }}%</h4>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -31,11 +33,10 @@
             <div class="timeline-card card">
                 <div class="card-body">
                     <div class="mb-1"><strong class="mr-1">Info Penyakit</strong>
-                        <p class="text-muted">16 hours ago</p>
+                        <p class="text-muted">{{ $diagnosaMax->created_at }}</p>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta beatae illo illum iusto iste mollitia explicabo quam officia. Quas ullam, quisquam architecto aspernatur enim iure debitis dignissimos suscipit
-                        ipsa.
+                        {{ $diagnosaMax->information }}
                     </p>
                 </div>
             </div>
@@ -45,15 +46,60 @@
             <div class="timeline-card card">
                 <div class="card-body">
                     <div class="mb-1"><strong class="mr-1">Saran Dokter</strong>
-                        <p class="text-muted">16 hours ago</p>
+                        <p class="text-muted">{{ $diagnosaMax->created_at }}</p>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta beatae illo illum iusto iste mollitia explicabo quam officia. Quas ullam, quisquam architecto aspernatur enim iure debitis dignissimos suscipit
-                        ipsa.
+                        {{ $diagnosaMax->suggestion }}
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="separator-breadcrumb border-top"></div>
+
+<!-- end of row-->
+<div class="row mb-4">
+    <div class="col-md-12 mb-4">
+        <div class="card text-left">
+            <div class="card-body">
+                <h4 class="card-title mb-3">Hasil Perhitungan</h4>
+                <div class="table-responsive">
+                    <table class="display table table-striped table-bordered" id="zero_configuration_table" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Kode</th>
+                                <th>Nama Penyakit</th>
+                                <th>Hasil Probabilitas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach ($diagnosis as $diagnosa)
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $diagnosa->code }}</td>
+                                    <td>{{ $diagnosa->name }}</td>
+                                    <td>{{ floor($diagnosa->results * 100) }}%</td>
+                                </tr>
+                            @endforeach
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>No</th>
+                                <th>Kode</th>
+                                <th>Nama Penyakit</th>
+                                <th>Hasil Probabilitas</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of col-->
+</div>
 @endsection

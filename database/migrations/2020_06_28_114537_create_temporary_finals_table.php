@@ -19,7 +19,7 @@ class CreateTemporaryFinalsTable extends Migration
             $table->foreign('disease_id')->references('id')->on('diseases');
             $table->unsignedBigInteger('symptom_id');
             $table->double('probability');
-            $table->double('results')->nullable();
+            $table->double('results');
             $table->timestamps();
         });
     }
