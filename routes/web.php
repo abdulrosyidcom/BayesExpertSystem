@@ -61,6 +61,11 @@ Route::group(
         Route::get('/diagnosis/results', 'DiagnosisController@results')->name('diagnosis.results');
         // END::diagnosis
 
+        // consultations
+        Route::get('/consultations', 'ConsultationsController@usersConsultations')->name('consultations');
+        Route::get('/consultations/{consultations:id}', 'ConsultationsController@usersConsultationsDetail')->name('consultations.detail');
+        // END::consultations
+
     }
 );
 

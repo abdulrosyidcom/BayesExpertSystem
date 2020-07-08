@@ -1,13 +1,14 @@
 @extends('layouts.backend.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Users Dashboard | Daftar Gejala Penyakit Ginjal')
 
 @section('content')
 
 <div class="breadcrumb">
-    <h1>Gejala</h1>
+    <h1>Gejala Penyakit Ginjal</h1>
 </div>
-<div class="separator-breadcrumb border-top"></div><!-- end of main-content -->
+
+<div class="separator-breadcrumb border-top"></div>
 
 <div class="row">
     <div class="col-md-12 mb-4">

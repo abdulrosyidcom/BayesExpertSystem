@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Users;
 
+use App\Consultation;
 use App\Disease;
 use App\Http\Controllers\Controller;
 use App\Symptom;
@@ -298,6 +299,18 @@ class DiagnosisController extends Controller
         $this->resultProbSistitisInterstisialis($sistitisInterstisialis);
         $this->resultProbInfeksiSaluranKemih($infeksiSaluranKemih);
         $this->resultProbBatuGinjal($batuGinjal);
+
+        $diagnosisMax = DB::select("SELECT `temporary_finals`.`id`, MAX(results) as `results`, `diseases`.* FROM temporary_finals JOIN `diseases` ON `temporary_finals`.`disease_id` = `diseases`.`id` GROUP BY `diseases`.`id` ORDER BY `results` DESC LIMIT 1");
+
+        foreach ($diagnosisMax as $diagnosaMax) {
+            Consultation::create([
+                'user_id' => Auth::user()->id,
+                'disease' => $diagnosaMax->name,
+                'score' => floor($diagnosaMax->results * 100),
+                'information' => $diagnosaMax->information,
+                'suggestion' => $diagnosaMax->suggestion
+            ]);
+        }
 
         return redirect('/users/diagnosis/results')->with('toast_success', Auth::user()->name . ' Berhasil Mendiagnosa');
     }
