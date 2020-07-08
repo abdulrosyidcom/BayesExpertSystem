@@ -26,12 +26,12 @@
                 <div></div>
                 <div></div>
             </div>
-            <div class="d-flex align-items-center">
+            {{-- <div class="d-flex align-items-center">
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
                     <i class="fas fa-search text-muted"></i>
                 </div>
-            </div>
+            </div> --}}
             <div style="margin: auto"></div>
             <div class="header-part-right">
                 <!-- Full screen toggle -->
