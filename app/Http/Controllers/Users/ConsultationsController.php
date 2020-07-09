@@ -17,7 +17,6 @@ class ConsultationsController extends Controller
     public function usersConsultationsDetail($id)
     {
         $consultation = Consultation::where('id', $id)->first();
-        // dd($consultation);
         return view('users.consultations.detail', compact('consultation'));
     }
 }

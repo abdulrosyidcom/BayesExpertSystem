@@ -2,18 +2,10 @@
 /** image-bg css for Detox **/
 
 
-.award-section .single-item .icon-box:before{
-	background: url(../images/icons/shape-1.png);
+.preloader{
+  background-image:url(../images/preloader.gif);
 }
 
-.award-section .owl-item:nth-child(2n+1) .single-item .icon-box:before{
-	background: url(../images/icons/shape-2.png);
-}
-
-.award-section .owl-item:nth-child(3n+1) .single-item .icon-box:before{
-	background: url(../images/icons/shape-3.png);
-}
-
-.award-section .owl-item:nth-child(4n+1) .single-item .icon-box:before{
-	background: url(../images/icons/shape-4.png);
+.main_page.active_boxlayout{
+	background: url(../images/shape/pattern.jpg);
 }

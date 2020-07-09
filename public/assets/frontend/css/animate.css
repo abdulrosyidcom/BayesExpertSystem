@@ -3667,39 +3667,6 @@ to {
     }
 }
 
-@keyframes rotateme-2 {
-    from {
-        transform: rotateY(0deg);
-    }
-    to { 
-        transform: rotateY(360deg);
-    }
-}
-@-webkit-keyframes rotateme-2 {
-    from {
-        -webkit-transform: rotateY(0deg);
-    }
-    to { 
-        -webkit-transform: rotateY(360deg);
-    }
-}
-@-moz-keyframes rotateme-2 {
-    from {
-        -moz-transform: rotateY(0deg);
-    }
-    to { 
-        -moz-transform: rotateY(360deg);
-    }
-}
-@-o-keyframes rotateme-2 {
-    from {
-        -o-transform: rotateY(0deg);
-    }
-    to { 
-        -o-transform: rotateY(360deg);
-    }
-}
-
 .page-banner .icon-one,
 .main-banner .icon-one{
     animation-name: rotateme; 
@@ -3797,11 +3764,6 @@ to {
 }
 
 
-@-webkit-keyframes animateBubble{0%{margin-top:20%}100%{margin-top:-30%}}@-moz-keyframes animateBubble{0%{margin-top:20%}100%{margin-top:-30%}}@keyframes animateBubble{0%{margin-top:20%}100%{margin-top:-30%}}@-webkit-keyframes sideWays{0%{margin-left:0}100%{margin-left:25px}}@-moz-keyframes sideWays{0%{margin-left:0}100%{margin-left:25px}}@keyframes sideWays{0%{margin-left:0}100%{margin-left:25px}}
-
-
 /** service-hexagon **/
 
 service_hexagon{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes service_hexagon{0%{-moz-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes service_hexagon{0%{-o-transform:rotate(0deg);transform:rotate(0deg)}100%{-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes service_hexagon{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}
-
-service_hexagon_2{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}@-moz-keyframes service_hexagon_2{0%{-moz-transform:rotateY(0deg);transform:rotateY(0deg)}100%{-moz-transform:rotateY(360deg);transform:rotateY(360deg)}}@-o-keyframes service_hexagon_2{0%{-o-transform:rotateY(0deg);transform:rotateY(0deg)}100%{-o-transform:rotateY(360deg);transform:rotateY(360deg)}}@keyframes service_hexagon_2{0%{-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);-o-transform:rotateY(0deg);transform:rotateY(0deg)}100%{-webkit-transform:rotateY(360deg);-moz-transform:rotateY(360deg);-o-transform:rotateY(360deg);transform:rotateY(360deg)}}
