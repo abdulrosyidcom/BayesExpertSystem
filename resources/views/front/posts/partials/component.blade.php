@@ -4,10 +4,11 @@
             <div class="widget-title">
                 <h3>Search</h3>
             </div>
+
             <div class="widget-content">
-                <form action="blog-grid.html" method="post">
+                <form action="/search" method="get">
                     <div class="form-group">
-                        <input type="search" name="search-field" placeholder="Search" required="">
+                        <input type="search" name="query" placeholder="Search">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </div>
                 </form>

@@ -85,5 +85,9 @@ Route::group(
         // Front - Route Blog Comment
         Route::post('/blog/comments/{post}', 'CommentController@store');
         // END::Front - Route Blog Comment
+
+        // Front - Route Blog Search
+        Route::get('/search', 'PostsController@blogSearch')->name('blog.search');
+        // END::Front - Route Blog Search
     }
 );

@@ -48,4 +48,14 @@ class PostsController extends Controller
         $categories = Category::all();
         return view('front.posts.index', compact('posts', 'categories', 'tags'));
     }
+
+    public function blogSearch()
+    {
+        $query = request('query');
+        $tags = Tag::all();
+        $categories = Category::all();
+        $posts = Post::where("title", "like", "%$query%")->latest()->paginate(3);
+
+        return view('front.posts.index', compact('posts', 'categories', 'tags'));
+    }
 }

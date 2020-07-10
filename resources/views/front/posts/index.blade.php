@@ -59,7 +59,7 @@
                     @endforeach
 
                     <div class="mt-5">
-                        {{ $posts->links() }}
+                        {{ $posts->links('pagination::simple-tailwind') }}
                     </div>
                     
                 </div>
