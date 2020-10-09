@@ -42,8 +42,8 @@
                             <div class="lower-content">
                                 <div class="upper-box">
                                     <ul class="post-info">
-                                        <li><span>by</span>&nbsp; {{ $post->user->name }}</li>
-                                        {{-- <li><a href="blog-details.html">3 Comments</a></li> --}}
+                                        <li><i class="fas fa-user"></i>&nbsp; {{ $post->user->name }}</li>
+                                        <li>{{ $post->comments->count() }} Comments</li>
                                     </ul>
                                     <h3>{{ $post->title }}</h3>
                                     <div class="text">
@@ -78,7 +78,7 @@
                                     <div class="clearfix">
                                         <div class="comment-info pull-left">
                                             <h5>{{ $comment->user->name }}</h5>
-                                            <span class="comment-time">Comment {{ $comment->created_at->diffForHumans() }}</span>
+                                            <span class="comment-time">Publish {{ $comment->created_at->diffForHumans() }}</span>
                                         </div>
                                     </div>
                                     <div class="text">{{ $comment->comment }}</div>

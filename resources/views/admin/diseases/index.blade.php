@@ -48,7 +48,7 @@
                                     <form action="/admin/diseases/{{ $disease->id }}" method="post">
                                         @csrf
                                         @method('delete')
-                                        <button class="btn btn-danger btn-sm" onclick="return confirm('Data gejala akan terhapus')">
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Data gejala akan terhapus')">
                                             <i class="far fa-trash-alt"></i>
                                         </button>
                                     </form>

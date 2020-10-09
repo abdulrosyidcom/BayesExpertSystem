@@ -47,8 +47,8 @@
                                 </div>
                                 <div class="lower-content">
                                     <ul class="post-info">
-                                        <li><span>by</span>&nbsp; {{ $post->user->name }}></li>
-                                        {{-- <li><a href="blog-details.html">3 Comments</a></li> --}}
+                                        <li><i class="fas fa-user"></i>&nbsp; {{ $post->user->name }}</li>
+                                        <li><a href="/blog/{{ $post->slug }}">{{ $post->comments->count() }} Comments</a></li>
                                     </ul>
                                     <h3><a href="/blog/{{ $post->slug }}">{{ $post->title }}</a></h3>
                                     <p>{!! substr($post->content, 0, 200) !!}</p>

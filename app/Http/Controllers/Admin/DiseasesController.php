@@ -110,6 +110,7 @@ class DiseasesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Disease::destroy($id);
+        return redirect('/admin/diseases')->with('toast_success', 'Data Berhasil Dihapus');
     }
 }
