@@ -155,7 +155,7 @@
             <div class="app-footer">
                 <div class="row">
                     <div class="col-md-9">
-                        <p><strong>Exper System</strong></p>
+                        <p><strong>Expert System</strong></p>
                         <p>
                             Sistem Pakar diagnosa penyakit ginjal dengam menggunakan algoritma Bayes
                             <sunt></sunt>

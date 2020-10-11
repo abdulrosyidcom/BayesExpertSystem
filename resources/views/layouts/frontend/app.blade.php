@@ -198,8 +198,6 @@
     </footer>
     <!-- main-footer end -->
 
-
-
 <!--Scroll to top-->
 <button class="scroll-top scroll-to-target" data-target="html">
     <span class="fa fa-arrow-up"></span>
@@ -222,5 +220,7 @@
 <!-- main-js -->
 <script src="{{ asset('assets/frontend') }}/js/script.js"></script>
 
-</body><!-- End of .page_wrapper -->
+@stack('js')
+
+</body>
 </html>

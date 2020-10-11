@@ -9,7 +9,7 @@
     <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-2.png)"></div>
     <div class="auto-container">
         <div class="content-box">
-            <h1>Expert System for Diagnosing Kidney Diseases</h1>
+            <h1>Sistem Pakar Diagnosa Penyakit Ginjal Dengan Menggunakan Algoritma Bayes</h1>
             <div class="image-box">
             <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/pattern-9.png);"></div>
                 <figure class="image image-1"><img src="{{ asset('assets/frontend') }}/images/banner/banner-2-1.png" alt=""></figure>
@@ -164,5 +164,38 @@
     </div>
 </section>
 <!-- news-section end -->
-    
+
+@guest
+<!-- Modal -->
+<div class="modal fade" id="doctModal" tabindex="-1" aria-labelledby="doctModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="doctModalLabel">Langkah langkah sebelum mendiagnosa</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>1. Pastikan sudah <code>registrasi</code>, jika belum klik <a href="{{ url('/register') }}" class="badge badge-info">disini</a></p>
+                <p>2. Klik tombol <code>login</code> yang terdapat pada sebelah kanan atas</p>
+                <p>3. Masukan <code>username</code> dan <code>password</code> jika sudah punya akun</p>
+                <p>4. Klik <code>login</code></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Mengerti</button>
+            </div>
+        </div>
+    </div>
+</div>
+@endguest
+
 @endsection
+
+@push('js')
+    <script>
+        setTimeout(() => {
+            $('#doctModal').modal('show');
+        }, 1500)
+    </script>
+@endpush

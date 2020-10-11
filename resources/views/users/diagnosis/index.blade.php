@@ -4,8 +4,16 @@
 
 @section('content')
 
-<div class="breadcrumb">
-    <h1>Gejala Penyakit Ginjal</h1>
+<div class="row">
+    <div class="col-md-12 mb-4">
+        <div class="card text-left">
+            <div class="card-body">
+                <h5 class="my-0">Berikut adalah gejala penyakit ginjal yang bisa anda pilih sesuai gejala yang anda rasakan</h5><br>
+                <h5 class="my-0">Anda bisa klik <code>checkbox</code> atau <code>nama gejala yang dibawah ini</code></h5><br>
+                <h5 class="my-0">Klik <code>Submit</code> jika sudah memilih semua gejala yang anda rasakan</h5>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="separator-breadcrumb border-top"></div>
